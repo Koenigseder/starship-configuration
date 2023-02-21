@@ -1,0 +1,48 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[character]
+success_symbol = "[ ](bold green)"
+error_symbol = "[ ](bold red)"
+
+[cmd_duration]
+format = "祥[$duration]($style) "
+
+[directory]
+truncation_length = 8
+truncate_to_repo = false
+truncation_symbol = ".../"
+
+[git_branch]
+symbol = "🌱 "
+truncation_symbol = ""
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖 "
+
+[git_state]
+merge = " MERGING"
+cherry_pick = "🍒 PICKING"
+style = "bold red"
+
+[git_metrics]
+disabled = false
+
+[git_status]
+ahead = " "
+behind = " "
+diverged = " "
+up_to_date = ""
+untracked = ""
+stashed = " "
+modified = " "
+staged = " "
+deleted = "﯊"
+style = "bold yellow"
+
+[battery]
+full_symbol = " "
+charging_symbol = " "
+discharging_symbol = "ﮊ "
